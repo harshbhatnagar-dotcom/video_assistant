@@ -19,20 +19,13 @@ Instead of watching long lectures, users can directly jump to the most relevant 
 
 ## 🏗️ How It Works
 
-Video (MP4) 
-↓ 
-FFmpeg → Convert to MP3 
-↓ 
-Whisper (large-v2) → Transcription 
-↓ 
-Chunking (timestamp + text) 
-↓ 
-Embeddings (qwen3-embedding via Ollama) 
-↓ 
-User Query
-↓ 
-Similarity Search (Cosine Similarity)
-↓ 
-Top Relevant Chunks 
-↓ 
+Video (MP4) ↓ 
+FFmpeg → Convert to MP3 ↓ 
+Whisper (large-v2) → Transcription ↓ 
+Chunking (timestamp + text) ↓ 
+Embeddings (qwen3-embedding via Ollama) ↓ 
+User Query ↓ 
+Similarity Search (Cosine Similarity) ↓ 
+Top Relevant Chunks ↓ 
 LLM Response with Timestamps 🎯
+
