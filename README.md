@@ -17,15 +17,15 @@ Instead of watching long lectures, users can directly jump to the most relevant 
 
 ---
 
-## 🏗️ How It Works
+## 📌 Description
 
-Video (MP4) ↓ 
-FFmpeg → Convert to MP3 ↓ 
-Whisper (large-v2) → Transcription ↓ 
-Chunking (timestamp + text) ↓ 
-Embeddings (qwen3-embedding via Ollama) ↓ 
-User Query ↓ 
-Similarity Search (Cosine Similarity) ↓ 
-Top Relevant Chunks ↓ 
-LLM Response with Timestamps 🎯
+1. **Video Input**: Start with an MP4 video file.  
+2. **Audio Extraction**: Use FFmpeg to convert video into MP3 format.  
+3. **Transcription**: Apply Whisper (large-v2) to generate text from audio.  
+4. **Chunking**: Split transcript into smaller chunks with timestamps.  
+5. **Embedding Generation**: Convert chunks into vector embeddings using qwen3 via Ollama.  
+6. **User Query**: Accept a question from the user.  
+7. **Similarity Search**: Perform cosine similarity to find relevant chunks.  
+8. **Context Retrieval**: Select top matching chunks.  
+9. **LLM Response**: Generate an answer with precise timestamps.
 
